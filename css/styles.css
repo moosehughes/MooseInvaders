@@ -1,0 +1,7 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+#gameboard { background-color:black; }
+#game-wrapper { margin:0 auto; width: 500px; }
