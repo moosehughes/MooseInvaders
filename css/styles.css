@@ -18,6 +18,10 @@ h3{
 	font-family: sans-serif;
 }
 
+body{
+	background-image: url('../images/background.jpg');
+}
+
 #gameboard { background-color:black; }
 #game-wrapper { margin:0 auto; width: 500px; }
 
@@ -75,6 +79,8 @@ nav ul li{
 nav ul li:hover{
 	width:350px;
 }
+
+
 
 nav ul li a{
 	text-decoration: none;
