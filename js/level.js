@@ -25,13 +25,13 @@
 
 /*lists objects and where they are positioned on the spritesheet */
   var spriteData = {
-    'alien1': { sx: 0,  sy: 0,  w: 23, h: 18, cls: Alien, frames: 3 },
-    'alien2': { sx: 0,  sy: 18, w: 23, h: 18, cls: Alien, frames: 3 },
-    'player': { sx: 0,  sy: 36, w: 26, h: 17, cls: Player, frames: 2 },
-    'missile': { sx: 0,  sy: 86, w: 3,  h: 14, cls: Missile }
+    'alien1': { sx: 0,  sy: 0,  w: 46, h: 30, cls: Alien, frames: 2 },
+    'alien2': { sx: 2,  sy: 38, w:38, h: 13, cls: Alien, frames: 2 },
+    'player': { sx: 0,  sy: 76, w: 38, h: 42, cls: Player, frames: 5 },
+    'missile': { sx: 0,  sy: 58, w: 4,  h: 5, cls: Missile }
   }
 /* start screen intro */  function startGame() {
-    var screen = new GameScreen("Goat Adventures","Not for pussies. Press space to play",
+    var screen = new GameScreen("Moose Invaders","Not for pussies. Press space to play",
                                  function() {
                                      Game.loadBoard(new GameBoard(1));
                                  });
@@ -40,7 +40,7 @@
   }
 /* if you fail this screen appears */
   function endGame() {
-    var screen = new GameScreen("You are a shit goat","(press space to restart)",
+    var screen = new GameScreen("You are a shit Moose","(press space to restart)",
                                  function() {
                                      Game.loadBoard(new GameBoard(1));
                                  });
@@ -49,7 +49,7 @@
 
 /* win screen */
   function winGame() {
-    var screen = new GameScreen("You Goat","(press space to restart)",
+    var screen = new GameScreen("You are a-moose-ing!","(press space to restart)",
                                  function() {
                                      Game.loadBoard(new GameBoard(1));
                                  });
@@ -57,7 +57,7 @@
   }
 /* sounds for game */
   $(function() {
-    GameAudio.load({ 'fire' : 'media/laser_2_.ogg', 'die' : 'media/ah.ogg' }, 
+    GameAudio.load({ 'fire' : 'media/laser_2_.ogg', 'die' : 'media/laser.ogg' }, 
                    function() { 
                        Game.initialize("#gameboard", levelData, spriteData,
                                       { "start": startGame,
