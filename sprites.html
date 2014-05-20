@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Moose Invaders</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js'></script>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script src='js/engine.js'></script>
+	<script src='js/game.js'></script>
+	<script src='js/level.js'></script>
+</head>
+<body>
+
+	<section class="sidebar">
+		<div class="logo"><img src="images/whitemoose.png"/></div>
+		<nav>
+			<ul>
+
+				<li><a href="index.html#game-wrapper">Web Game</a></li>
+				<li><a href="index.html#app">App Game</a></li>
+				<li><a href="index.html#flow">Flow Chart</a></li>
+				<li><a href="blog.html">Blog</a></li>
+
+			</ul>	
+		</nav>
+		<article>
+			<h3>Moose Invaders</h3>
+			<p>This site has been created to display my work for University</p>
+			<p>A Classic of all games has been reverse engineered and recreated in my own way in Canvas and in Xcode</p>
+			<p>Enjoy.</p>
+
+		</article>
+	</section>
+
+	<section class="blog wrapper">
+		<div class="morepost">
+			<div class="title"><h3>Sprite Sheets<h3></div>
+			<div class="text"><p>And How they work inside Canvas</p><p>We start off by Looking at <a href="https://github.com/cykod/AlienInvaders" target="_blank">Cykod's Alien Invaders</a> Github Repo that was downloaded to reverse engineer and glance over the code to begin with and decide to start on the sprites and how they work with the game itself. The original sprite sheet shows basic sprites for the game Cykod created</p> <img src="images/sprites.png"><br> 
+			<p>Now lets see how these work in the game...</p>
+			<img src="images/code.PNG" width="500">
+			<p>This image shows the game gathering the sprite data and where the sprites are positioned on the sheet. It then defines a sprite variable using these positionings, telling the game to only use those certain areas of the sheet for that one sprite.</p><br>
+			<img src="images/spritecode.PNG" width="500">
+			<p>Here we have the engine.js calling the array of sprite variables from the image before and loading them into the game</p>
+			</div>
+
+
+		</div></a>
+
+	</section>
+</body>
+</html>
