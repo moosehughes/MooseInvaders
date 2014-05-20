@@ -14,7 +14,7 @@ p{
 
 }
 
-h3{
+h3,h1,h2{
 	font-family: sans-serif;
 }
 
@@ -23,7 +23,7 @@ body{
 }
 
 #gameboard { background-color:black; }
-#game-wrapper { margin:0 auto; width: 500px; }
+#game-wrapper { margin:0px auto; width: 500px; }
 
 
 .sidebar{
@@ -94,4 +94,58 @@ nav ul li a{
 nav ul li a:hover{
 
 	
+}
+
+.wrapper{
+	color: #191919;
+	margin-left:320px;
+	text-align: center;
+
+}
+
+.canvas{
+	padding:50px 0 0 0;
+}
+
+.blog{
+	width:500px;
+	overflow: hidden;
+	margin:0px auto;
+}
+
+.post{
+	text-align: left;
+	margin:40px 0 40px 0px;
+ 	width:600px;
+ 	background-color: #222222;
+ 	padding:40px;
+ 	color: #fff;
+ 	display: block;
+ 	transition: all ease 0.5s;
+ 	border: 10px inset transparent;
+
+
+}
+a{
+	text-decoration: none;
+}
+
+.post:hover{
+	width:400px;
+	overflow: visible;
+	border: 10px inset #00ff00;
+}
+
+.morepost{
+	text-align: left;
+	line-height: 1.65em;
+	padding:40px 0;
+}
+
+.code{
+	background-color:#010101;
+	padding:5px 10px;
+	color: #00ff00;
+	font-family: Courier;
+	font-size: 12px;
 }
