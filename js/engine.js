@@ -25,7 +25,8 @@ var Game = new function() {
     Sprites.load(sprite_data,this.callbacks['start']);
   };
 
-  this.loadBoard = function(board) { Game.board = board; };
+  this.loadBoard = function(board) { Game.board = board;
+   };
 
   this.loop = function() { 
     Game.board.step(100/1000); 
@@ -66,6 +67,7 @@ var GameScreen = function GameScreen(text,text2,callback) {
     canvas.font = "bold 20px arial";
     var measure2 = canvas.measureText(text2);
     canvas.fillText(text2,Game.width/2 - measure2.width/2,Game.height/2 + 40);
+
   };
 };
 
@@ -74,6 +76,7 @@ var GameBoard = function GameBoard(level_number) {
   this.missiles = 0;
   this.level = level_number;
   var board = this;
+
 
   this.add =    function(obj) { obj.board=this; this.objects.push(obj); return obj; };
   this.remove = function(obj) { this.removed_objs.push(obj); };
@@ -199,7 +202,9 @@ var GameAudio = new function() {
         audio_channels[a]['channel'].src = this.sounds[s].src;
         audio_channels[a]['channel'].load();
         audio_channels[a]['channel'].play();
+        GameAudio.play('sound');
         break;
+
       }
     }
   };

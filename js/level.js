@@ -27,7 +27,7 @@
   var spriteData = {
     'alien1': { sx: 0,  sy: 0,  w: 55, h: 27, cls: Alien, frames: 2 },
     'alien2': { sx: 0,  sy: 36, w:51, h: 21, cls: Alien, frames: 2 },
-    'player': { sx: 0,  sy: 68, w: 49, h: 56, cls: Player, frames: 2 },
+    'player': { sx: 0,  sy: 68, w: 50, h: 56, cls: Player, frames: 3 },
     'missile': { sx: 0,  sy: 56, w: 3,  h: 10, cls: Missile }
   }
 /* start screen intro */  function startGame() {
@@ -57,7 +57,7 @@
   }
 /* sounds for game */
   $(function() {
-    GameAudio.load({ 'fire' : 'media/laser_2_.ogg', 'die' : 'media/laser.ogg' }, 
+    GameAudio.load({ 'fire' : 'media/laser_2_.ogg', 'die' : 'media/laser.ogg', 'sound' : 'media/Rymdkraft_-_Ultramumie.wav' }, 
                    function() { 
                        Game.initialize("#gameboard", levelData, spriteData,
                                       { "start": startGame,
