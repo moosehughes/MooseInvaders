@@ -24,9 +24,9 @@ var Game = new function() {
   this.loadBoard = function(board) { Game.board = board; };
 
   this.loop = function() { 
-    Game.board.step(30/1000); 
+    Game.board.step(100/1000); 
     Game.board.render(Game.canvas);
-    setTimeout(Game.loop,30);
+    setTimeout(Game.loop,40);
   };
 };
 
@@ -37,7 +37,7 @@ var Sprites = new function() {
     this.map = sprite_data;
     this.image = new Image();
     this.image.onload = callback;
-    this.image.src = 'images/spritemoose2.png';
+    this.image.src = 'images/spritemoose.png';
   };
 
   this.draw = function(canvas,sprite,x,y,frame) {

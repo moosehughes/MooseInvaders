@@ -22,7 +22,7 @@ body{
 	background-image: url('../images/background.jpg');
 }
 
-#gameboard { background-color:blue; }
+#gameboard { background-image: url('../images/gamebacl.jpg'); }
 #game-wrapper { margin:0px auto; width: 500px; }
 
 
