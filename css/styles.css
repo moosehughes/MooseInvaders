@@ -23,8 +23,25 @@ body{
 }
 
 #gameboard { background-image: url('../images/gamebacl.jpg'); }
-#game-wrapper { margin:0px auto; width: 500px; }
+#game-wrapper { margin:0px auto; width: 500px; position:relative; }
 
+.scoreboard{
+	position: absolute;
+	padding:20px;
+	font-family: arial;
+	color: #fff;
+	font-weight: bold;
+	float: left;
+}
+
+.score{
+	position: absolute;
+	font-family: arial;
+	color: #fff;
+	font-weight: bold;
+	float: left;
+	margin:0 0 0 10px;
+}
 
 .sidebar{
 	width:320px;

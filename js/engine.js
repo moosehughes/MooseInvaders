@@ -8,6 +8,10 @@ var Game = new function() {
     this.width = $(this.canvas_elem).attr('width');
     this.height= $(this.canvas_elem).attr('height');
 
+    //PLAYER FUCKING SCOREEEEEE
+    this.playerScore = 0;
+    this.playerScoreEl = $('.score');
+
     $(window).keydown(function(event) {
       if(KEY_CODES[event.keyCode]) Game.keys[KEY_CODES[event.keyCode]] = true;
     });
@@ -26,6 +30,7 @@ var Game = new function() {
   this.loop = function() { 
     Game.board.step(100/1000); 
     Game.board.render(Game.canvas);
+    Game.playerScoreEl.html(Game.playerScore);
     setTimeout(Game.loop,40);
   };
 };
