@@ -42,7 +42,7 @@
     'missile': { sx: 0,  sy: 56, w: 3,  h: 10, cls: Missile }
   }
 /* start screen intro */  function startGame() {
-    var screen = new GameScreen("Moose Invaders","Not for pussies. Press space to play",
+    var screen = new GameScreen("Moose Invaders","Not for Goats. Press space to play",
                                  function() {
                                      Game.loadBoard(new GameBoard(1));
                                  });
@@ -54,7 +54,7 @@
     var screen = new GameScreen("You are a shit Moose","(press space to restart)",
                                  function() {
                                      Game.loadBoard(new GameBoard(1));
-                                    
+
                                  });
     Game.loadBoard(screen);
   }
